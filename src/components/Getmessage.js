@@ -1,4 +1,4 @@
-const openai_api_key = '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';
+const openai_api_key = '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';
 
 const DEFAULT_PARAMS = {
   model: 'text-davinci-003',

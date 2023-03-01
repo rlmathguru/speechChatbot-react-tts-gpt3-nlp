@@ -15,7 +15,9 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "react-speech-kit": "^3.0.1",
     "react-speech-recognition": "^3.10.0",
+    "react-toastify": "^9.1.1",
     "sass": "^1.58.3",
     "web-vitals": "^2.1.4"
   },
