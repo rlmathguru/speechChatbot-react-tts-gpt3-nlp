@@ -48,6 +48,7 @@ html {
   border: 0 !important;
   color: white !important;
   cursor: pointer;
+  height: 60px !important;
 }
 .send_btn {
   border-radius: 0 15px 15px 0 !important;
@@ -55,6 +56,7 @@ html {
   border: 0 !important;
   color: white !important;
   cursor: pointer;
+  height: 60px !important;
 }
 .search_btn {
   border-radius: 0 15px 15px 0 !important;
@@ -71,6 +73,7 @@ html {
   width: 100% !important;
   padding: 5px 10px;
   margin-bottom: 15px !important;
+  cursor: pointer;
 }
 .active {
   background-color: rgba(0, 0, 0, 0.3);
@@ -201,6 +204,52 @@ html {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.typing {
+  width: 5em;
+  height: 2em;
+  position: relative;
+  padding: 10px;
+  margin-left: 5px;
+  /* background: #e6e6e6; */
+  border-radius: 20px;
+}
+
+.typing__dot {
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  background: #8d8c91;
+  border-radius: 50%;
+  opacity: 0;
+  animation: loadingFade 1s infinite;
+}
+
+.typing__dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typing__dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing__dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes loadingFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @media (max-width: 576px) {
   .contacts_card {
     margin-bottom: 15px !important;

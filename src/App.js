@@ -1,14 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 // import './App.css';
-import ChatBot from './pages/ChatBot';
+
 import { Demo } from './pages/Demo';
 
 function App() {
   return (
     <BrowserRouter>
+      <ToastContainer />
       <Routes>
-        <Route path="/chatBot" element={<ChatBot />}></Route>
         <Route path="/demo" element={<Demo />}></Route>
       </Routes>
     </BrowserRouter>
